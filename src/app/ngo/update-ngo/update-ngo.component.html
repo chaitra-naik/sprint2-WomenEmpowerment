@@ -1,0 +1,50 @@
+<div class="col-md-6 offset-md-3">
+    <h3 style="text-align: center;"> Update Employee </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Ngo Name</label>
+            <input type="text" class ="form-control" id = "ngoName"
+                [(ngModel)] = "ngo.ngoName" name = "ngoName">
+        </div>
+    
+        <div class="form-group">
+            <label> NGO Location</label>
+            <input type="text" class ="form-control" id = "ngoLocation"
+                [(ngModel)] = "ngo.ngoLocation" name = "ngoLocation">
+        </div>
+    
+        <div class="form-group">
+            <label> NGO Type</label>
+            <input type="text" class ="form-control" id = "ngoType"
+                [(ngModel)] = "ngo.ngoType" name = "ngoType">
+        </div>
+
+        <div class="form-group">
+            <label> NGO Motive</label>
+            <input type="text" class ="form-control" id = "ngoMotive"
+                [(ngModel)] = "ngo.ngoMotive" name = "ngoMotive">
+        </div>
+
+        <div class="form-group">
+            <label> Donation</label>
+            <input type="text" class ="form-control" id = "donation"
+                [(ngModel)] = "ngo.donation" name = "donation">
+        </div>
+
+        <div class="form-group">
+            <label> NGO Size</label>
+            <input type="text" class ="form-control" id = "ngoSize"
+                [(ngModel)] = "ngo.ngoSize" name = "ngoSize">
+        </div>
+
+        <div class="form-group">
+            <label> NGO Activities</label>
+            <input type="text" class ="form-control" id = "ngoActivities"
+                [(ngModel)] = "ngo.ngoActivities" name = "ngoActivities">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 

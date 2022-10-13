@@ -1,0 +1,99 @@
+<!--<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="text-center">Add Training Course</h1>
+                <form (ngSubmit)="onSubmit()">
+                    <small class="text-danger">{{msg}}</small>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Training Course ID</mat-label>
+                        <input type="text" required matInput [(ngModel)]="trainingCourse.trainingCourseId" name="trainingCourseId">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Course Name</mat-label>
+                        <input type="text" required matInput [(ngModel)]="trainingCourse.courseName" name="courseName">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Course Duration</mat-label>
+                        <input type="text" required matInput [(ngModel)]="trainingCourse.courseDuration" name="courseDuration">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Starting Date</mat-label>
+                        <input type="text" required matInput [(ngModel)]="trainingCourse.startingDate" name="startingDate">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Ending Date</mat-label>
+                        <input type="text" required matInput [(ngModel)]="trainingCourse.endingDate" name="endingDate">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Course Completion Status</mat-label>
+                        <input type="text" required matInput [(ngModel)]="trainingCourse.courseCompletionStatus" name="courseCompletionStatus">
+                    </mat-form-field>
+
+                    <div class="container text-center">
+                        <button type="submit" mat-raised-button color="primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>-->
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a routerLink="/trainingcourselist" routerLinkActive="active" class="nav-link" >NGO List</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="/addtrainingcourse" routerLinkActive="active" class="nav-link" >Add NGO</a>
+        </li>
+    </ul>
+</nav>
+<div class="col-md-6 offset-md-3">
+    <h3> Create Employee </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Training Course ID</label>
+            <input type="text" class ="form-control" id = "trainingCourseId"
+                [(ngModel)] = "trainingCourse.trainingCourseId" name = "trainingCourseId" formControlName="trainingCourseId">
+        </div>
+    
+        <div class="form-group">
+            <label> Course Name</label>
+            <input type="text" class ="form-control" id = "courseName"
+                [(ngModel)] = "trainingCourse.courseName" name = "courseName" formControlName="courseName">
+        </div>
+    
+        <div class="form-group">
+            <label> Course Duration</label>
+            <input type="text" class ="form-control" id = "courseDuration"
+                [(ngModel)] = "trainingCourse.courseDuration" name = "courseDuration" formControlName="courseDuration">
+        </div>
+
+        <div class="form-group">
+            <label> Starting Date</label>
+            <input type="text" class ="form-control" id = "startingDate"
+                [(ngModel)] = "trainingCourse.startingDate" name = "startingDate" formControlName="startingDate">
+        </div>
+
+        <div class="form-group">
+            <label> Ending Date</label>
+            <input type="text" class ="form-control" id = "endingDate"
+                [(ngModel)] = "trainingCourse.endingDate" name = "endingDate" formControlName="endingDate">
+        </div>
+
+        <div class="form-group">
+            <label> Course Completion Status</label>
+            <input type="text" class ="form-control" id = "courseCompletionStatus"
+                [(ngModel)] = "trainingCourse.courseCompletionStatus" name = "courseCompletionStatus" formControlName="courseCompletionStatus">
+        </div>
+
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 
