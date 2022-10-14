@@ -17,4 +17,13 @@ export class TrainingcourseService {
   addTrainingCourse(trainingCourse: Trainingcourse): Observable<Object>{
     return this.httpclient.post(`${"http://localhost:8080/trainingcourse"}`, trainingCourse);
   }
+
+  updateTrainingCourse(trainingCourseID:any,trainingCourse:Trainingcourse): Observable<Object>{
+    return this.httpclient.put('${this.baseURL}/${id}',trainingCourse);
+  }
+
+  deleteTrainingCourse(trainingCourseID:any):Observable<Object>{
+    return this.httpclient.delete('${this.baseURL}/${id}');
+
+  }
 }

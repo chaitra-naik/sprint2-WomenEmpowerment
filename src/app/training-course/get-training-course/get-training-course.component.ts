@@ -13,16 +13,29 @@ export class GetTrainingCourseComponent implements OnInit {
 
   trainingCourse:Trainingcourse[]=[];
 
-  constructor(private trainingcourseServ:TrainingcourseService, public loginServ:LoginService, private route:Router) { }
+  constructor(private trainingcourseServ:TrainingcourseService, public loginServ:LoginService, private router:Router) { }
 
   ngOnInit(): void {
-    this.getTrainingCourses();
+    this.getTrainingCourse();
   }
 
-  private getTrainingCourses(){
+  private getTrainingCourse(){
     this.trainingcourseServ.getCourseList().subscribe(data => {
       this.trainingCourse = data;
     });
+  }
+
+  updateTrainingCourse(trainingCourseID:any)
+  {
+     this.router.navigate(['update-trainingcourse',trainingCourseID])
+  }
+  
+  deleteTrainingCourse(trainingCourseID:any)
+  {
+    this.trainingcourseServ.deleteTrainingCourse(trainingCourseID).subscribe(data=>{
+      console.log(data);
+      this.getTrainingCourse();
+    })
   }
 
 }

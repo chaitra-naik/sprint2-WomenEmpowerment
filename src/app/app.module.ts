@@ -25,6 +25,10 @@ import { FooterComponent } from './footer/footer.component';
 import { AddTrainingcourseComponent } from './training-course/add-trainingcourse/add-trainingcourse.component';
 import { UpdateTrainingcourseComponent } from './training-course/update-trainingcourse/update-trainingcourse.component';
 import { GetTrainingcourseIdComponent } from './training-course/get-trainingcourse-id/get-trainingcourse-id.component';
+import { TraineeComponent } from './trainee/trainee.component';
+import { AddTraineeComponent } from './trainee/add-trainee/add-trainee.component';
+import { UpdateTraineeComponent } from './trainee/update-trainee/update-trainee.component';
+import { TraineeListComponent } from './trainee/trainee-list/trainee-list.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,11 @@ import { GetTrainingcourseIdComponent } from './training-course/get-trainingcour
     FooterComponent,
     AddTrainingcourseComponent,
     UpdateTrainingcourseComponent,
-    GetTrainingcourseIdComponent
+    GetTrainingcourseIdComponent,
+    TraineeComponent,
+    AddTraineeComponent,
+    UpdateTraineeComponent,
+    TraineeListComponent
   ],
   imports: [
     BrowserModule,

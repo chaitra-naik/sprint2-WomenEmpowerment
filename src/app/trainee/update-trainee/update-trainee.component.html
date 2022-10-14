@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a routerLink="/traineelist" routerLinkActive="active" class="nav-link" >View Trainee List</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="/addtrainee" routerLinkActive="active" class="nav-link" >Add Trainee</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="/update-trainee" routerLinkActive="active" class="nav-link" >Update trainee</a>
+        </li>
+    </ul>
+</nav>
+<div class="col-md-6 offset-md-3">
+    <h3> Update Trainee </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Trainee ID</label>
+            <input type="text" class ="form-control" id = "traineeId"
+                [(ngModel)] = "trainee.traineeId" name = "traineeId">
+        </div>
+    
+        <div class="form-group">
+            <label> Username</label>
+            <input type="text" class ="form-control" id = "username"
+                [(ngModel)] = "trainee.username" name = "username">
+        </div>
+    
+        <div class="form-group">
+            <label> First Name</label>
+            <input type="text" class ="form-control" id = "firstName"
+                [(ngModel)] = "trainee.firstName" name = "firstName">
+        </div>
+
+        <div class="form-group">
+            <label> Last Name</label>
+            <input type="text" class ="form-control" id = "lastName"
+                [(ngModel)] = "trainee.lastName" name = "lastName">
+        </div>
+
+        <div class="form-group">
+            <label> Contact Number</label>
+            <input type="text" class ="form-control" id = "contact"
+                [(ngModel)] = "trainee.contact" name = "contact">
+        </div>
+
+        <div class="form-group">
+            <label> Family Information</label>
+            <input type="text" class ="form-control" id = "familyInfo"
+                [(ngModel)] = "trainee.familyInfo" name = "familyInfo">
+        </div>
+
+        <div class="form-group">
+            <label> Aadhar Number</label>
+            <input type="text" class ="form-control" id = "aadharNo"
+                [(ngModel)] = "trainee.aadharNo" name = "aadharNo">
+        </div>
+
+        <div class="form-group">
+            <label> Email ID</label>
+            <input type="text" class ="form-control" id = "email"
+                [(ngModel)] = "trainee.email" name = "email">
+        </div>
+    
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    
+    </form>
+    </div> 
+
+
