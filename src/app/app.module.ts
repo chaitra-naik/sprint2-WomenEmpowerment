@@ -25,6 +25,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AddTrainingcourseComponent } from './training-course/add-trainingcourse/add-trainingcourse.component';
 import { UpdateTrainingcourseComponent } from './training-course/update-trainingcourse/update-trainingcourse.component';
 import { GetTrainingcourseIdComponent } from './training-course/get-trainingcourse-id/get-trainingcourse-id.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { AddFeedbackComponent } from './feedback/add-feedback/add-feedback.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { GetTrainingcourseIdComponent } from './training-course/get-trainingcour
     FooterComponent,
     AddTrainingcourseComponent,
     UpdateTrainingcourseComponent,
-    GetTrainingcourseIdComponent
+    GetTrainingcourseIdComponent,
+    FeedbackComponent,
+    AddFeedbackComponent
   ],
   imports: [
     BrowserModule,

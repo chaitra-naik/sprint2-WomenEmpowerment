@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth.guard';
+import { Feedback } from './feedback/feedback';
+import { FeedbackComponent } from './feedback/feedback.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
@@ -12,6 +14,7 @@ import { UpdateNgoComponent } from './ngo/update-ngo/update-ngo.component';
 import { AddTrainingcourseComponent } from './training-course/add-trainingcourse/add-trainingcourse.component';
 import { GetTrainingCourseComponent } from './training-course/get-training-course/get-training-course.component';
 import { TrainingCourseComponent } from './training-course/training-course.component';
+
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'landingpage' },
@@ -25,7 +28,8 @@ const routes: Routes = [
   {path:'getngobyid/:ngoId',component:GetNgoIdComponent},
   {path:'trainingcourse',component:TrainingCourseComponent},
   {path:'trainingcourselist',component:GetTrainingCourseComponent},
-  {path:'addtrainingcourse',component:AddTrainingcourseComponent}
+  {path:'addtrainingcourse',component:AddTrainingcourseComponent},
+  {path:'feedback',component:FeedbackComponent}
 ];
 
 @NgModule({
